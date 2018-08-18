@@ -1,0 +1,8 @@
+{
+  "name": "Aplicativo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "6af6dfc6"
+}
