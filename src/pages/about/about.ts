@@ -11,4 +11,14 @@ export class AboutPage {
 
   }
 
+  abreFace(){
+    window.open('https://www.facebook.com/bibliotecafalada/','_blank');
+    }
+  
+  abreSite(){
+    window.open('http://bibliotecafalada.com/','_blank'); 
+  }
+
 }
+
+

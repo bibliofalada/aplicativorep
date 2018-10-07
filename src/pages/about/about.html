@@ -1,43 +1,55 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Sobre
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar color="amarelo">
+      
+      <ion-buttons left>
+        <button ion-button icon-only>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
 
-<ion-content padding>
+      <ion-title >
+          Sobre
+      </ion-title>
+
+    </ion-navbar>
+  </ion-header>
+
+<ion-content class="bg-style" padding>
 
   <h2>Quem somos nós?</h2>
-  <p>
-    O Biblioteca Falada é um projeto de extensão da Faculdade de Arquitetura, Artes e Comunicação da<br>
-          Universidade Estadual Paulista "Júlio de Mesquita Filho" (UNESP, campus de Bauru) que realiza a<br>
-          transformação de textos literários e/ou jornalísticos do formato impresso para o áudio, a partir<br>
-          dos processos de adaptação de roteiro, locução e sonoplastia/sonorização.  Também são realizadas<br>
-          audiodescrições de imagens, fotografias, desenhos, filmes, videoclipes e outros produtos audiovisuais.<br>
-          Os textos convertidos, provenientes de livros, revistas e jornais, internet, bancos de filmes e<br>
-          outras fontes,  são escolhidos com base nas demandas e sugestões dos alunos do Lar Escola Santa<br>
-          Luzia para Cegos, de Bauru, e está aberto a todos os interessados.
+  <p>O Biblioteca Falada é um projeto de extensão da Faculdade de Arquitetura, Artes e Comunicação da Universidade 
+  Estadual Paulista "Júlio de Mesquita Filho" (UNESP, campus de Bauru) que realiza a transformação de textos 
+  literários e/ou jornalísticos do formato impresso para o áudio, a partir dos processos de adaptação de roteiro, locução e sonoplastia/sonorização.  Também são realizadas
+  audiodescrições de imagens, fotografias, desenhos, filmes, videoclipes e outros produtos audiovisuais.
+  Os textos convertidos, provenientes de livros, revistas e jornais, internet, bancos de filmes e
+  outras fontes,  são escolhidos com base nas demandas e sugestões dos alunos do Lar Escola Santa
+  Luzia para Cegos, de Bauru, e está aberto a todos os interessados.
+  <br><br>
+  Tendo em vista a escassa edição de publicações em braile, bem como a dificuldade de acesso a
+  informações por parte das pessoas com defiência visual quando se trata de fontes
+  como livros, jornais e revistas, as gravações resultantes do projeto possibilitam, ao público
+  atingido, a oportunidade de contato e conhecimento da produção impressa e de seus autores, bem
+  como de produções audiovisuais.
+  <br><br>
+  O formato em áudio apresenta baixo custo, portabilidade e aplicação variada  (como CDs, sites,
+  reprodutores de MP3), tornando-o um recurso bastante facilitador da comunicação.
+  <br><br>
+  O projeto Biblioteca Falada, portanto, contribui para o desenvolvimento dos deficientes visuais
+  em relação às atividades intelectuais, colaborando ainda para desenvolver as aptidões de audição
+  e aquisição de conhecimentos, fundamentais para a inclusão social e o exercício cidadão. 
   </p>
 
-  <p>Tendo em vista a escassa edição de publicações em braile, bem como a dificuldade de acesso a<br>
-          informações por parte das pessoas com defiência visual quando se trata de fontes<br>
-          como livros, jornais e revistas, as gravações resultantes do projeto possibilitam, ao público<br>
-          atingido, a oportunidade de contato e conhecimento da produção impressa e de seus autores, bem<br>
-          como de produções audiovisuais.</p>
+  <div text-center="">
+      <button ion-button icon-only (click)="abreFace()">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+  
+      <button ion-button icon-only color="amarelo" (click)="abreSite()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+  </div>
 
-          <p>  O formato em áudio apresenta baixo custo, portabilidade e aplicação variada  (como CDs, sites,
-          reprodutores de MP3), tornando-o um recurso bastante facilitador da comunicação.</p>
-
-          <p>O projeto Biblioteca Falada, portanto, contribui para o desenvolvimento dos deficientes visuais<br>
-          em relação às atividades intelectuais, colaborando ainda para desenvolver as aptidões de audição<br>
-          e aquisição de conhecimentos, fundamentais para a inclusão social e o exercício cidadão. </p>
-
-
-
-
-
-
+          <!--
                         <ion-fab right bottom>
                           <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
                           <ion-fab-list side="left">
@@ -49,4 +61,5 @@
                             <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
                           </ion-fab-list>
                         </ion-fab>
+                -->
 </ion-content>
