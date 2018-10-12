@@ -7,6 +7,9 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AdminPage } from '../pages/admin/admin';
+import { NgSrcModule } from 'ng-src';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,6 +21,8 @@ import { ProducoesProvider } from '../providers/producoes/producoes';
 import { MenuPageModule } from '../pages/menu/menu.module';
 import { LoginPage } from '../pages/login/login';
 import { LoginPageModule } from '../pages/login/login.module';
+import { IonicAudioModule, AudioProvider, WebAudioProvider, defaultAudioProviderFactory } from 'ionic-audio';
+
 
 
 @NgModule({
@@ -26,7 +31,8 @@ import { LoginPageModule } from '../pages/login/login.module';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AdminPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,8 @@ import { LoginPageModule } from '../pages/login/login.module';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     LoginPageModule,
-    MenuPageModule
+    MenuPageModule,
+    NgSrcModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,7 +57,8 @@ import { LoginPageModule } from '../pages/login/login.module';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AdminPage
   ],
   providers: [
     StatusBar,

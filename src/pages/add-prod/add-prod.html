@@ -1,0 +1,38 @@
+<!--
+  Generated template for the AddSongPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar producao</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button block clear (click)="addProd(prod)">Adicionar</button>
+  <ion-item>
+    <ion-label>
+      Titulo
+    </ion-label>
+    <ion-input [(ngModel)]="prod.titulo" placeholder="titulo da producao..."></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>
+        Descricao
+      </ion-label>
+      <ion-input [(ngModel)]="prod.descricao" placeholder="descricao da producao..."></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>
+          URL
+        </ion-label>
+        <ion-input [(ngModel)]="prod.url" placeholder="url da producao..."></ion-input>
+      </ion-item>
+
+</ion-content>

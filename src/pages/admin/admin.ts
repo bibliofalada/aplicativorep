@@ -5,12 +5,19 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ProducoesProvider } from '../../providers/producoes/producoes'
 
+/**
+ * Generated class for the AdminPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-admin',
+  templateUrl: 'admin.html',
 })
-export class HomePage {
+export class AdminPage {
 
   prodsList$: Observable<Producao[]>;
 
@@ -26,6 +33,7 @@ export class HomePage {
         }))
       })
     );
+
   }
 
   ionViewDidLoad() {
@@ -43,5 +51,5 @@ export class HomePage {
     })
   );
   }
-  
+
 }

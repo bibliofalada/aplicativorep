@@ -28,10 +28,10 @@ export class MenuPage {
   @ViewChild(Nav) nav: Nav;
  
   pages: PageInterface[] = [
-    { title: 'Tab 1', pageName: 'TabsPage', tabComponent: 'HomePage', index: 0, icon: 'home' },
-    { title: 'Tab 2', pageName: 'TabsPage', tabComponent: 'ContactsPage', index: 1, icon: 'contacts' },
-    { title: 'Tab 3', pageName: 'TabsPage', tabComponent: 'AboutPage', index: 2, icon: 'information-circle' },
-    { title: 'Login', pageName: 'LoginPage', icon: 'shuffle' },
+    { title: 'Home', pageName: TabsPage, tabComponent: HomePage, index: 0, icon: 'home' },
+    { title: 'Contact', pageName: TabsPage, tabComponent: ContactPage, index: 1, icon: 'contacts' },
+    { title: 'Sobre', pageName: TabsPage, tabComponent: AboutPage, index: 2, icon: 'information-circle' },
+    { title: 'Login', pageName: LoginPage, icon: 'shuffle' },
   ];
  
   constructor(public navCtrl: NavController) { }
@@ -60,7 +60,7 @@ export class MenuPage {
  
     if (childNav) {
       if (childNav.getSelected() && childNav.getSelected().root === page.tabComponent) {
-        return 'primary';
+        return 'amarelo';
       }
       return;
     }

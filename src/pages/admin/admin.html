@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="amarelo">
+    
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title >
+        Administrador
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-buttons>
+    <button ion-button navPush="AddProdPage">Adicionar producao</button>
+  </ion-buttons>
+  
+  <ion-list>
+    <ion-list-header>
+      Producoes:
+    </ion-list-header>
+    
+    <ion-item
+      *ngFor="let prod of prodsList$ | async"
+      detail-push navPush="ViewProdPage"[navParams]="{prod:prod}">
+      {{prod.titulo}}
+    </ion-item>
+  </ion-list>
+  
+  <ion-buttons>
+    
+    <button ion-button (click)="showAllProds()">
+        Mostrar todas as producoes
+    </button>  
+  
+  </ion-buttons>
+  
+  </ion-content>
